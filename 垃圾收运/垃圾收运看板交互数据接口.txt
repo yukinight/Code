@@ -1,0 +1,46 @@
+列表
+{
+	// 车辆信息
+	car_number:'苏 E12345', 
+	car_type:'机扫车', 
+	driver:'张全蛋',
+	phone:'15050655263', 
+	// 当前状态
+	'里程':{max:152, current:86}, 
+	'产量':{max:21.2,current:20},
+	'耗时':{max:7.6, current:7.1},
+	// 时间轴状态
+	finish:70,
+	time_status:{
+		did:[
+			{time:'04:50',status:1},
+			{time:'04:50',status:1},
+			{time:'04:50',status:1},
+			{time:'04:50',status:1},
+			{time:'04:50',status:1},
+			{time:'04:50',status:0},
+			{time:'04:50',status:1},
+			{time:'04:50',status:2},
+			{time:'04:50',status:1},
+			{time:'04:50',status:2},
+			{time:'04:50',status:1},
+			{time:'04:50',status:1},
+			{time:'04:50',status:1}
+		],
+		will:[
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0},
+			{time:'04:50',status:0}
+		]
+	}
+}
+图一
+{"逾期未收":90, "按时收运":600};
+图二
+{x:['日产量', '预计量', '已收量'], y:[500, 450, 300]};

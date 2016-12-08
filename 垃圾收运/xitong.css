@@ -1,0 +1,143 @@
+body{
+	background-color: #EEF3FA;
+	font-size:12px;
+	font-family: "微软雅黑";
+	color: #7A8895;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+img{
+	vertical-align:middle;
+	border-style:none;
+}
+.clear{
+	clear:both;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont/iconfont.eot');
+  src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont/iconfont.woff') format('woff'),
+  url('iconfont/iconfont.ttf') format('truetype'),
+  url('iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:12px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.split_line{
+	border-right: 1px solid #eee;
+}
+.limit_overflow{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.search_area{
+	position:absolute;
+	width:420px;
+	height: 40px;
+	left:10px;
+	top:20px;
+    border-radius:2px 2px 2px 0px;
+    border:1px solid #7A8895;
+    background-color:#5c9df5;
+}
+.search_input_area{
+	width:315px;
+	height:40px;
+	vertical-align: middle;
+	line-height: 40px;
+	float:left;
+	background-color: #FFFFFF;
+}
+.search_add_area{
+	width:40px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	vertical-align:middle;
+	float:left;
+	background-color: #FFFFFF;
+}
+.search_search_area{
+	width:65px;
+	height:40px;
+	line-height: 40px;
+	background-color: #5C9DF5;
+	text-align: center;
+	float:left;
+	border-radius:0px 2px 2px 0px;
+}
+.search_input{
+	height:25px;
+	width:294px;
+	padding:0 10px;
+	border:none;
+	border-right:1px solid #eee;
+	vertical-align: middle;
+}
+.img_vertical_middle_span{
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.toolbar{
+	/*width:202px;*/
+	height: 35px;
+	position:absolute;
+	right: 20px;
+	top: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #7A8895;
+	text-align: center;
+	border-radius:2px 2px 2px 2px;
+}
+ul#tool li{
+	float: left;
+	width: 100px;
+	height: 35px;
+	padding: 7px 0;
+	position:relative;
+	/*border-left: 1px solid #7A8895;*/
+}
+ul#tool a{
+	display: block;
+	text-decoration:none;
+	height:20px;
+	line-height: 20px;
+	border-right: 1px solid #eee;
+	/*vertical-align: middle;*/
+}
+.title_span{
+	font-size:14px;
+	font-weight:bold;
+}
+/*.mapbt_area{
+	position: absolute;
+	width:30px;
+	height: 60px;
+	right:20px;
+	bottom:20px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	border-radius:2px 2px 2px 2px;
+}
+.cam_area{
+	position: absolute;
+	width:30px;
+	height: 30px;
+	right:20px;
+	bottom:90px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	border-radius:2px 2px 2px 2px;
+}*/

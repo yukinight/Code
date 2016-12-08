@@ -1,0 +1,47 @@
+.search_res{
+	position:absolute;
+	left:10px;
+	top:72px;
+	width:356px;
+	border:1px solid #7A8895;
+	border-top:none;
+	background-color: #FFFFFF;
+	color: #7A8895;
+	font-size: 12px;
+	border-radius:2px;
+}
+.search_title_area{
+	padding: 0 16px 0 20px;
+	height:40px;
+	color:#5c9df5;
+}
+.search_head_area{
+	display:table;
+	background-color: #5c9df5;
+	height:40px;
+	width:356px;
+	color: #ffffff;
+}
+.search_head_cell{
+	display: table-cell;
+	width:25%;
+	vertical-align: middle;
+	text-align: center;
+}
+.search_content_area{
+	border-top:1px solid #7A8895;
+	border-bottom:1px solid #7A8895;
+}
+
+.search_res_card{
+	height: 36px;
+	/*line-height: 36px;*/
+	/*padding:0 16px;*/
+	/*position: relative;*/
+	display: table;
+	width: 100%;
+}
+.search_res_card_cell{
+	display: table-cell;
+	vertical-align: middle;
+}

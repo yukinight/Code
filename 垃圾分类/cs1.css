@@ -1,0 +1,314 @@
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	background-color: #E6E6E6; 
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.leftPanel{
+	position: absolute;
+	width:272px;
+	left:10px;
+	top:20px;
+	bottom: 20px;
+	min-height: 200px;
+}
+.legend{
+	position: fixed;
+	right:10px;
+	bottom: 10px;
+}
+.searchBox{
+	height: 40px;
+	background-color: #FFF;
+	position: relative;
+}
+.searchInput{
+	border:none;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	width:272px;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 70px 0 10px;
+	box-sizing: border-box;
+}
+
+.clearInput{
+	position: absolute;
+	box-sizing: border-box;
+	top:0;
+	right:40px;
+	height: 40px;
+	width:30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	color: #b3c1c4;
+	cursor: pointer;
+}
+.searchButton{
+	height: 40px;
+	width:40px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	color: #FFF;
+	background-color: #5C9DF5;
+	cursor: pointer;
+	position: absolute;
+	box-sizing: border-box;
+	right:0;
+	top:0;
+}
+.searchRes{
+	margin-top:12px;
+	background-color: #FFF;
+}
+.resHead{
+	height: 40px;
+	width:272px;
+	background-color: #5B9FF5;
+}
+.headLi{
+	float:left;
+	width:50%;
+	box-sizing: border-box;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	color: #FFF;
+	border-left:solid 1px #E2E5E7;
+	position: relative;
+	cursor: pointer;
+}
+.headLi:first-child{
+	border:none;
+}
+.headPopUp{
+	display: none;
+	width:90px;
+	position: absolute;
+	border-radius: 2px;
+	left:15%;
+}
+.headPopUp li{
+	height: 36px;
+	color: #798794;
+	background-color:#FFF;
+	border:solid 1px #E4E9EA;
+	border-top:none;
+	cursor: pointer;
+}
+.headPopUp li:first-child{
+	border-top:none;
+}
+.headPopUp li:hover{
+	background-color: #BBDEFC;
+}
+.resBody{
+	overflow-y: auto;
+	background-color: #FFF;
+}
+.resCard{
+	border-bottom: solid 1px #E4E9EA;
+	cursor: pointer;
+}
+.resCard:hover{
+	background-color: #F6F6F6;
+}
+.resCard:after{
+	content:"";        
+	display:block;        
+	height:0;        
+	clear:both;        
+	visibility:hidden;  
+}
+.picAreaInCard{
+	float: left;
+	margin: 14px 18px;
+	height: 60px;
+	border-radius: 2px;
+}
+.dustbinPic{
+	width:60px;
+	height: 60px;
+	border-radius: 5px;
+}
+.dustbinLabel{
+	margin: 14px 0 14px 10px;
+	float: left;
+	width:142px;
+}
+.dustbinName,.dustbinPos{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	color: #7a8895;
+	width:100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dustbinName{
+	color: #5c9df5;
+	font-size: 14px;
+}
+
+.detailBoard{
+	margin-top:12px;
+	background-color: #FFF;
+}
+.detailHead{
+	height: 40px;
+	width:272px;
+	background-color: #5B9FF5;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+	cursor: pointer;
+}
+.backIcon{
+	float:left;
+	padding-left: 15px;
+}
+.detailPicArea{
+	float: left;
+	margin: 14px 18px;
+	height: 80px;
+	border-radius: 2px;
+}
+.detailPic{
+	width: 80px;
+	height: 80px;
+	border-radius:5px;
+}
+.detailOverview{
+	background-color: #FFF;
+	border-bottom: solid 1px #E4E9EA;
+}
+.detailOverview:after{
+	content:'';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.detailLabel{
+	float:left;
+	width:140px;
+	margin: 14px 10px 14px 5px;
+}
+.detailNum{
+	font-size: 14px;
+	color: #5B9FF5;
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.detailPos{
+	width:100%;
+	height: 50px;
+	line-height: 25px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.detailInfoNavArea{
+	padding: 18px;
+	width:236px;
+}
+.detailInfoNavArea:after{
+	content:'';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.tabLable{
+	border:solid 1px #5B9FF5;
+	border-left:none;
+	float:left;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: 32px;
+	box-sizing:border-box;
+	cursor: pointer;
+}
+.tabLable:first-child{
+	border-left:solid 1px #5B9FF5;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius:3px;
+}
+.tabLable:last-child{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius:3px;
+}
+.selected{
+	background-color: #5B9FF5;
+	color: #FFF;
+}
+.detailContent{
+	padding: 10px 40px 20px 60px;
+}
+.detailContent table tr{
+	height: 24px;
+	color: #8a9daf;
+}
+.overflowArea{
+	position: relative;
+	display: inline-block;
+	margin-left:20px;
+}
+.overflowButton{
+	display: inline-block;
+	background-color: #98adc7;
+	color: #FFF;
+	width:40px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	border:1px outset;
+}
+.overflowDegree{
+	position: absolute;
+	width:350px;
+	background-color: #FFF;
+	border-radius: 4px;
+	border:2px groove #E6E6E6;
+	display: none;
+}
+.overflowDegree td{
+	text-align: center;
+}
+.closeButton{
+	position: absolute;
+	right:-10px;
+	top:-10px;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	color: red;
+	background-color: #FFF;
+	border-radius: 50%;
+	cursor: pointer;
+}

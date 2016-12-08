@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>垃圾分类满溢界面</title>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="cs1.css">
+</head>
+<body>
+	<div id="left_panel" class="leftPanel">
+		<div class="searchBox">
+			<input type="text" name="search_text" id="search_text" placeholder="查找分类箱" class="searchInput">
+			<i class="iconfont clearInput" id="clearInput">&#xe66c;</i>
+			<i class="iconfont searchButton" id="searchButton">&#xe622;</i>
+		</div>
+		<div class="searchRes" id="searchRes">
+			<div class="resHead">
+				<ul>
+					<li class="headLi">垃圾类型 <i class="iconfont">&#xe612;</i></li>
+					<li class="headLi">
+						满溢状态 <i class="iconfont">&#xe612;</i>
+						<div name="popup" class="headPopUp">
+							<ul>
+								<li>正常状态</li>
+								<li>轻度满溢</li>
+								<li>严重满溢</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="resBody" id="resBody"></div>		
+		</div>
+		<!-- <div class="detailBoard" id="detailRes">
+			<div class="detailHead">
+				<i class="iconfont backIcon">&#xe655;</i>
+				金风科技分类箱
+			</div>
+			<div>
+				<div class="detailOverview">
+					<div class="detailPicArea"><img src="Artboard 1_MarkMan.png" class="detailPic"></div>
+					<div class="detailLabel">
+						<div class="detailNum">SDF-548239</div>
+						<div class="detailPos">苏州市吴中区苏州大道某某小区</div>
+					</div>
+				</div>
+				<div>
+					<div >
+						<ul class="detailInfoNavArea">
+							<li class="tabLable" style="width:50%;">厨余垃圾</li>
+							<li class="tabLable" style="width:50%;">其他</li>
+						</ul>
+					</div>
+					<div class="detailContent">
+						<table style="width:100%;">
+							<tr>
+								<td>满溢状态：</td>
+								<td>严重满溢</td>
+							</tr>
+							<tr>
+								<td>满溢程度：</td>
+								<td>
+									85% 
+									<div class="overflowArea">
+										<span class="overflowButton">详情</span>
+										<div class="overflowDegree">
+											<table style="width:100%;border-collapse:collapse;">
+												<tr style="background-color:#98adc7;color:#FFF;">
+													<th>类别</th>
+													<th>容积</th>
+													<th>编码</th>
+													<th>满溢程度</th>
+												</tr>
+												<tr>
+													<td>厨余</td>
+													<td>XX - 5482</td>
+													<td>2456L</td>
+													<td>80.8%</td>
+												</tr>
+											</table>
+											<i class="iconfont closeButton">&#xe66c;</i>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>清运人员：</td>
+								<td>张全蛋</td>
+							</tr>
+							<tr>
+								<td>当前调度：</td>
+								<td>15:00 - 15:30</td>
+							</tr>
+							<tr>
+								<td>当前任务：</td>
+								<td>已超时</td>
+							</tr>
+							<tr>
+								<td>超时时长：</td>
+								<td>20分钟</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+
+	<div class="legend"><img src="./img/图例.png"></div>
+
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="js1.js"></script>
+</body>
+</html>

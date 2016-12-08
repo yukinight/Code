@@ -1,0 +1,46 @@
+.search_history{
+	position:absolute;
+	left:10px;
+	top:60px;
+	width:355px;
+	border:1px solid #7A8895;
+	border-top:none;
+	background-color: #FFFFFF;
+	color: #7A8895;
+}
+.history_title_area{
+	height:40px;
+	width:360px;
+	border-top:1px solid #7A8895;
+}
+.title_table{
+	border-collapse:collapse;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+}
+.history_content_area{
+	height:420px;
+	border-top:1px solid #7A8895;
+	border-bottom:1px solid #7A8895;
+}
+.history_del_area{
+	text-align: center;
+	vertical-align: middle;
+	height:40px;
+	line-height: 40px;
+}
+.history_list{
+	/*list-style-image:url('Images/Clock circular outline.png');*/
+	background-image: url('Images/Clock circular outline.png');
+	background-repeat:no-repeat;
+	background-position:20px 50%;
+	height: 36px;
+	line-height: 36px;
+	color: #7A8895;
+	padding: 0 24px 0 40px;
+}
+.highlight_history{
+	color:#2f323a;
+	background-color: #dddddd;
+}

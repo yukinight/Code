@@ -1,0 +1,136 @@
+.top_panel{
+	margin-top:18px;
+}
+.board_title_div{
+	width:320px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background-color: #5b9ff5;
+	color: #FFF;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.cards_area{
+	padding: 0 20px;
+}
+.card_area{
+	background-color: #FFF;
+	padding: 16px 22px;
+	margin-top:10px;
+}
+.card_left_panel{
+	float:left;
+	width:125px;
+}
+.card_right_panel{
+	float:right;
+	width:125px;
+}
+.card_mid_panel{
+	margin:0 135px 0 130px;
+}
+.card_mid_left{
+	width:100px;
+	/*height:100px;*/
+	float: left;
+}
+.card_mid_right{
+	margin-left: 100px;
+	padding: 0 10px;
+    /*display: flex;         
+	align-items: center;   
+	min-height: 100px; */
+}
+.timelistwraptable{
+	display: table;
+	height: 100px;
+}
+.timelistwrapcell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.crdv{
+	padding-left:16px;
+}
+.crdli{
+	height: 30px;
+}
+.cldli{
+	height:25px;
+}
+.chart_info_div{
+	/*height: 80px;*/
+	width: 22px;
+	background-color: #D9E0E3;
+	padding: 3px;
+	position: absolute;
+	bottom: 30px;
+}
+.chart_info_div li{
+	text-align: center;
+	height: 18px;
+}
+.ctinfolt{
+	left:0;
+}
+.ctinfort{
+	right:0;
+}
+.ctdivlv1{
+	display:table;
+	width:100%;
+}
+.ctdivlv2{
+	display:table-cell;
+	width:50%;
+}
+.ctdivlv3lt{
+	margin:0 auto;
+	width:400px;
+	position:relative;
+}
+.ctdivlv3rt{
+	margin:0 auto;
+	width:300px;
+	position:relative;
+}
+.ctdivlt{
+	width:360px;
+	height:300px;
+	margin-left:40px;
+}
+.ctdivrt{
+	width:260px;
+	height:300px;
+	margin-right:40px;
+}
+.carstatusicon{
+	margin-right: 10px;
+}
+.cstdiv{
+    width:50px;
+    padding-top:25px;
+    height:35px;
+}
+.cstli{
+    float:left;
+}
+.cst1{
+    background: url(Images/circle1.png) no-repeat scroll left 5px;
+}
+.cst2{
+    background: url(Images/circle2.png) no-repeat scroll left 5px;
+}
+.cst3{
+    background: url(Images/circle3.png) no-repeat scroll left 5px;
+}
+.cstline1{
+    background: url(Images/line1.jpg) repeat-x scroll left 12px;
+}
+.cstline2{
+    background: url(Images/line2.jpg) repeat-x scroll left 12px;
+}
+.csttime{
+    margin-left: -6px;
+}

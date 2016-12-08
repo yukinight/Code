@@ -1,0 +1,77 @@
+.search_res{
+	position:absolute;
+	left:10px;
+	top:72px;
+	width:356px;
+	border:1px solid #7A8895;
+	border-top:none;
+	background-color: #FFFFFF;
+	color: #7A8895;
+	font-size: 12px;
+	border-radius:2px;
+}
+.search_title_area{
+	padding: 0 16px 0 20px;
+	height:40px;
+	color:#5c9df5;
+}
+.search_head_area{
+	display:table;
+	background-color: #5c9df5;
+	height:40px;
+	width:356px;
+	color: #ffffff;
+}
+.search_head_cell{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.search_content_area{
+	border-top:1px solid #7A8895;
+	border-bottom:1px solid #7A8895;
+}
+
+.search_res_card{
+	width:356px;
+	height: 100px;
+	border-bottom: 1px solid #7A8895;
+}
+.res_card_left{
+	width:186px;
+	height:70px;
+	float:left;
+	padding: 20px 0px 10px 10px;
+	/*margin: 10px;*/
+}
+.res_card_left_top{
+	height: 30px;
+}
+.res_card_left_top_left{
+	font-size: 14px;
+	color: #5c9df5;
+	float: left;
+	width:125px;
+	text-align: center;
+	
+	width:125px;
+	vertical-align: middle;
+}
+.res_card_left_top_right{
+	border-left:1px solid #7A8895;
+	float:right;
+	width:41px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.res_card_left_bottom{
+	margin-top:8px;
+	height: 32px;
+}
+.res_card_right{
+	width:140px;
+	height:100px;
+	line-height: 100px;
+	text-align: center;
+	float:right;
+}

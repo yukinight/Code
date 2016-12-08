@@ -1,0 +1,62 @@
+.return_to_all{
+	position:absolute;
+	left:10px;
+	top:72px;
+	width:336px;
+	border:1px solid #7A8895;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	border-radius:2px;
+	padding: 0 0 0 20px;
+	height:40px;
+	color:#5c9df5;
+}
+.search_res{
+	position:absolute;
+	left:10px;
+	top:122px;
+	width:356px;
+}
+.search_detail_pic_area{
+	background-color: #FFFFFF;
+	/*position:absolute;
+	left:10px;
+	top:122px;*/
+	width:100%;
+	height: 148px;
+	margin-bottom: 10px;
+}
+.table_cell{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width:33%;
+}
+.status_label{
+	height:30px;
+	vertical-align:middle;
+	line-height: 30px;
+}
+.search_detail_status_area{
+	background-color: #FFFFFF;
+	/*position:absolute;
+	left:10px;
+	top:280px;*/
+	width:100%;
+	height: 72px;
+	display: table;
+	color: #5c9df5;
+	margin-bottom: 10px;
+}
+.search_detail_table_area{
+	background-color: #FFFFFF;
+	/*position:absolute;
+	left:10px;
+	top:362px;*/
+	width:100%;
+	height: 150px;
+}
+div#current_plan table td{
+	border-top: 1px solid;
+	height: 22px;
+}
