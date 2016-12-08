@@ -135,6 +135,17 @@
 		</div>'
 	}
 
+	function showThumbnailRes(){
+		$('#searchRes').slideUp('200',function(){
+			$('#ThumbnailRes').show();
+		});
+	}
+
+	function showDetailedRes(){
+		$('#ThumbnailRes').hide();
+		$('#searchRes').slideDown();
+	}
+
 	jQuery(document).ready(function($) {
 		$(window).resize(function(){
 			$('#resBody').css({
@@ -142,8 +153,17 @@
 			});
 		});
 		$(document).click(function(e){
+			// 条件筛选弹框收起
 			if($.inArray(e.target, $('li.headLi'))===-1){
 				$('li.headLi div[name=popup]').slideUp();
+			}
+			// console.log($(e.target).parents('div').is($('#left_panel')))
+			// console.log($('#searchRes').css('display')!=='none');
+			// 点击页面其他位置查询结果收起，方便操作地图
+			if(!$(e.target).parents('div').is($('#left_panel'))){
+				if($('#searchRes').css('display')!=='none'){
+					showThumbnailRes();
+				}
 			}
 		});
 
@@ -153,6 +173,10 @@
 		});
 		// 查询
 		$('#searchButton').click(function(){
+		});
+		// 展开详细查询结果
+		$('#ThumbnailRes').click(function(){
+			showDetailedRes();
 		});
 		// 查询结果筛选
 		$('div.headPopUp li').click(function(){
@@ -178,8 +202,9 @@
 			$('#searchRes').hide();
 		});
 
-		$('#left_panel').on('click','div.detailHead',function(){
+		$('#left_panel').on('click','div.detailHead',function(e){
 			// 详情页切换回查询栏
+			e.stopPropagation();
 			$('#detailRes').remove();
 			$('#searchRes').show();
 		}).on('click','ul.detailInfoNavArea>li',function(){
@@ -196,6 +221,7 @@
 			$(this).closest('div.overflowDegree').slideUp();
 		})
 
+		// ajax取得初始数据
 		var dustbinList = [{name:'雄狮创业分类箱', pos:'某某某小区', src:'Artboard 1_MarkMan.png'},
 		{name:'雄狮创业分类箱', pos:'某某某小区', src:'Artboard 1_MarkMan.png'},
 		{name:'雄狮创业分类箱', pos:'某某某小区', src:'Artboard 1_MarkMan.png'},
@@ -204,8 +230,10 @@
 		{name:'雄狮创业分类箱', pos:'某某某小区', src:'Artboard 1_MarkMan.png'},
 		{name:'雄狮创业分类箱', pos:'某某某小区', src:'Artboard 1_MarkMan.png'}
 		]
-		
+		// 取得初始数据后的操作
 		$('#resBody').html(generateSearchCards(dustbinList));
 		$(window).trigger('resize');
+		$('#resNum').text(dustbinList.length);
+		
 	});
 })();

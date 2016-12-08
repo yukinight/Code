@@ -13,6 +13,9 @@
 			<i class="iconfont clearInput" id="clearInput">&#xe66c;</i>
 			<i class="iconfont searchButton" id="searchButton">&#xe622;</i>
 		</div>
+		<div class="ThumbnailRes" id="ThumbnailRes">
+			共找到<span id="resNum"></span>个搜索结果<i class="iconfont">&#xe601;</i>
+		</div>
 		<div class="searchRes" id="searchRes">
 			<div class="resHead">
 				<ul>
@@ -106,9 +109,13 @@
 		</div> -->
 	</div>
 
-	<div class="legend"><img src="./img/图例.png"></div>
+	<div class="legend">
+		<div class="legendItem" style="color:#28b054"><i class="iconfont">&#xe674;</i>正常状态</div>
+		<div class="legendItem" style="color:#f88406"><i class="iconfont">&#xe674;</i>轻度满溢</div>
+		<div class="legendItem" style="color:#dd3d32"><i class="iconfont">&#xe674;</i>严重满溢</div>
+	</div>
 
-	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="js1.js"></script>
 </body>
 </html>
