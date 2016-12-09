@@ -1,0 +1,56 @@
+@thDivWidth: 60px, 150px, 360px, 120px;
+@thNum: length(@thDivWidth);
+@borderColor: #D7DFE2;
+@thHeight: 40px;
+@tableLeftPadding: 20px;
+
+.tablepanel{
+	position: absolute;
+	left:0;
+	top:40px;
+	bottom: 40px;
+	width:100%;
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		table-layout: fixed;
+		border:none;
+		th {
+			border-left:solid 1px @borderColor;
+			border-top:solid 1px @borderColor;
+			border-bottom:solid 1px @borderColor;
+		}
+		th:last-child{
+			border-right:solid 1px @borderColor;
+		}
+		td {
+			border-left:solid 1px @borderColor;
+			border-bottom:solid 1px @borderColor;
+		}
+		td:last-child{
+			border-right:solid 1px @borderColor;
+		}
+	}	
+}
+.tbheadpanel{
+	padding-left: @tableLeftPadding;
+}
+.tbbodypanel{
+	position: absolute;
+	top:@thHeight;
+	bottom: 0;
+	left:@tableLeftPadding;
+	right: 0;
+	overflow-y:auto;
+}
+
+.loopTh(@counter) when (@counter <= @thNum) {
+	.thdiv@{counter} {
+		width: extract(@thDivWidth, @counter);
+		height:@thHeight;
+		line-height: @thHeight;
+		vertical-align: middle;
+	}
+	.loopTh((@counter + 1));
+}
+.loopTh(1);

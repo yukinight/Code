@@ -1,0 +1,43 @@
+@tdWidPadding: 20px;
+@tdDivWidth: 60px-2*@tdWidPadding, 150px-2*@tdWidPadding, 360px-2*@tdWidPadding, 120px-2*@tdWidPadding;
+@tdNum: length(@tdDivWidth);
+@borderColor: #D7DFE2;
+@rowHeight: 80px;
+
+.loopTd(@counter) when (@counter <= @tdNum) {
+	.tddiv@{counter} {
+		width: extract(@tdDivWidth, @counter);	
+		padding: 6px @tdWidPadding;	
+	}
+	.loopTd((@counter + 1));
+}
+.loopTd(1);
+
+
+.tddiv1{
+	text-align: center;
+
+}
+.tddiv3{
+	overflow-y:auto;
+}
+
+.tick_checked{
+	background-color: #5C9DF5;
+	color: white;
+	font-size: 15px;
+}
+
+.tick_unchecked{
+	background-color: #CCCCCC;
+	color: #CCCCCC;
+	font-size: 15px;
+}
+.tick_checked:hover,.tick_unchecked:hover{
+	cursor:pointer;
+}
+
+.chosen {
+  color: #fff;
+  background-color: #c00;
+}
