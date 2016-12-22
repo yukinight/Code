@@ -1,0 +1,82 @@
+@imgWidth:80px;
+@bottomHeight:20px;
+@borderColor: rgba(165,165,165,0.8);
+
+.afterClear{
+	clear:both;
+	content:'';
+	// display: block;
+	visibility: hidden;
+	height:0;
+	overflow: hidden;
+}
+.picSec{
+	position: absolute;
+	width:@imgWidth;
+}
+.picSec>img{
+	width: @imgWidth;
+	height: @imgWidth;
+}
+.infoSec{
+	position: relative;
+	margin-left: @imgWidth + 10;
+	min-height: @imgWidth;
+	min-width: 180px;
+}
+.bodyPanel{
+	width: 100%;
+	padding-bottom: @bottomHeight;
+	overflow: hidden;
+	font-size:14px;
+}
+.subTitle{
+	font-size:12px;
+	color: rgb(150,150,150);
+}
+.bottomPanel{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom: 0px;
+	height: @bottomHeight;
+}
+// .bottomPanel:after{
+// 	.afterClear
+// }
+.price{
+	position: absolute;
+	left:0;
+	width:40px;
+	height: @bottomHeight;
+	color: red;
+	font-size:14px;
+}
+.qty{
+	width:70px;
+	position: absolute;
+	right:50px;
+	height: @bottomHeight;
+	border: solid 1px @borderColor;
+	border-radius: 3px;
+	text-align:center;
+	vertical-align: middle;
+	line-height:@bottomHeight; 
+	font-size: 18px;
+}
+.qtyInput{
+	width:30px;
+	height: @bottomHeight - 2;
+	border:none;
+	margin: 0 5px;
+	padding: 0;
+	text-align: center;
+	border-left:solid 1px @borderColor;
+	border-right: solid 1px @borderColor;
+	font-size:14px;
+}
+.remove{
+	position: absolute;
+	right: 0;
+	width: 40px;
+}
