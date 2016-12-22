@@ -1,0 +1,40 @@
+.calendarSec{
+	border-radius: 3px;
+	box-shadow: 0 0 3px 3px #DADADA;
+	width:180px;
+	padding: 5px 15px;
+	position: relative;
+	font-size: 12px;
+	color: #000;
+}
+.cal-head{
+	text-align: center;
+	border-bottom: solid 1px #666;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.cal-head span{
+	padding: 3px;
+}
+.head-left-arrow, .head-right-arrow{
+	float:left;
+	font-style: normal;
+	display: inline-block;
+	cursor: pointer;
+	width:25px;
+}
+.head-right-arrow{
+	float: right;
+}
+.cal-td{
+	width:22px;
+	height: 22px;
+	text-align: center;
+}
+.status-normal{
+	background: url('./img/normal.png') no-repeat 50% 100%;
+
+}
+.status-abnormal{
+	background: url('./img/abnormal.png') no-repeat 50% 100%;
+}

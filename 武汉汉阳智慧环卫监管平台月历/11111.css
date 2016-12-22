@@ -1,0 +1,100 @@
+body {
+	margin:0;
+	padding: 0;
+	font-family: "Microsoft YaHei","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+}
+
+.left-panel{
+	position: absolute;
+	left:0;
+	bottom:0;
+	top:0;
+	width:230px;
+	padding:10px;
+	box-sizing: border-box;
+}
+.input-field{
+	padding: 10px;
+}
+.input-field:after{
+	content:'';
+	display: block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+}
+.left-top-input{
+	display: block;
+	width:190px;
+	box-sizing: border-box;
+	padding: 5px;
+	margin-bottom: 8px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 1px 1px #CCC;
+}
+.query-button, .clear-button{
+	width:80px;
+	height: 30px;
+	margin-bottom: 8px;
+	float: left;
+	border-radius: 3px;
+	border:none;
+	background-color: #5999F1;
+	color: #FFF;
+}
+.clear-button{
+	float: right;
+	background-color: #ADC1D4;
+}
+div.left-calendar-panel > div{
+	margin-bottom: 10px;
+}
+
+.main-panel{
+	position: absolute;
+	right:0;
+	left:230px;
+	bottom:0;
+	top:0;
+	overflow: hidden;
+}
+.main-title{
+	/*position: absolute;
+	left:0;
+	top:0;*/
+	height:30px;
+	padding: 5px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.m-calendar-panel{
+	position: absolute;
+	top:45px;
+	bottom: 10px;
+	left:5px;
+	right: 10px;	
+}
+.ui-dialog-header{
+	/*padding: 10px;*/
+	background-color: #5596EE;
+	color: #FFF;
+}
+.ui-dialog-title{
+	padding: 12px;
+}
+.ui-dialog-close{
+	color: #FFF;
+	font-weight: normal;
+	opacity: 1;
+}
+.ui-dialog-body{
+	color: #666;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+}
+.fc-title{
+	padding-left:5px; 
+}
