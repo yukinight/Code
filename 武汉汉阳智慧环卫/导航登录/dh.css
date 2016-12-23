@@ -1,0 +1,105 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "Microsoft YaHei";
+	background-color: #0099FF;
+}
+
+.main-panel{
+	height: 100%;
+	background-color: #0099FF;
+	position: absolute;
+	top:50%;
+	left:0;
+	margin-top: -300px;
+	height: 600px;
+	width: 100%;
+}
+.head-panel{
+	height: 100px;
+	position: relative;
+	background-color: #0099FF;
+}
+.head-logo-sec{
+	position: absolute;
+	left:200px;
+	top:30px;
+}
+.body-panel{
+	height: 400px;
+	width: 100%;
+	background-color: #33ADFF;
+}
+.gadgets-panel{
+	width:900px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 50px 0;
+}
+.foot-panel{
+	height: 100px;
+	position: relative;
+	background-color: #0099FF;
+}
+.foot-info{
+	position: absolute;
+	top:50px;
+	right:200px;
+	color: #FFF;
+	font-size: 12px;
+}
+div.foot-info > span{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+
+.container-middle-item{
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    box-sizing: border-box;
+    height: 135px;
+    padding: 20px 0;
+    text-align: center;
+    color: #FFF;
+}
+.container-middle-item > img{
+	height: 60px;
+	width:60px;
+}
+.width-5-1{
+    width: 170px;
+}
+
+.width-5-2{
+    width: 350px;
+}
+
+.lb-ct{
+
+}
+
+.background-f2ba22{
+    background-color: #f2ba22;
+}
+
+.background-8ebb22{
+    background-color: #8EBB22;
+}
+.background-ff6600{
+    background-color: #ff6600;
+}
+
+.background-2a87f0{
+    background-color: #2a87f0;
+}
+
+.background-4ab60b{
+    background-color: #4ab60b;
+}
+
+.background-095DA7{
+    background-color: #095DA7;
+}
