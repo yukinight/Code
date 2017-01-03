@@ -1,0 +1,22 @@
+@import './cssVariables';
+
+.container{
+	// width:100%;
+	height:100%;
+	padding: 8px;
+	margin-left: @leftWidth;
+	margin-right: @rightWidth;
+	// background-color: #DDD;
+	box-sizing: border-box;
+	height: @contentHeight;
+	border-left: solid 10px @splitBarColor;
+	border-right: solid 10px @splitBarColor;
+	position: relative;
+}
+.title_sec{
+	border-left: solid 3px @themeGreen;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left:10px;
+	margin-bottom: 6px;
+}

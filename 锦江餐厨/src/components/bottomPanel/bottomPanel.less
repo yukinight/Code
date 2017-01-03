@@ -1,0 +1,49 @@
+@import './cssVariables';
+
+.bottomPanel > .ant-tabs-card > .ant-tabs-content {
+  height: 100%;
+  margin-top: -16px;
+}
+.bottomPanel{
+	position: absolute;
+	height:@bottomHeight;
+	width:100%;
+	left:0;
+	bottom:0;
+	background-color: @contentBgColor;
+	color: @contentFontColor;
+}
+
+div.bottomPanel > div:global(.ant-tabs){
+	height:100%;
+}
+div.bottomPanel div:global(.ant-tabs-tabpane){
+	position:relative;
+}
+
+
+// reset the default css for antd
+:global{
+	.ant-tabs-bar{
+		border-bottom: solid 1px @themeGreen;
+		margin-bottom: 0;
+	}
+	.ant-table-tbody > tr > td, .ant-table-thead > tr > th {
+		text-align:center;
+	}
+
+	.ant-table-small .ant-table-thead > tr > th {
+		background-color: #DDD;
+	}
+	.ant-table-small .ant-table-header table{
+		background-color: #DDD;
+	}
+	.ant-table-small .ant-table-body > table {
+		table-layout: fixed;
+		width:100%;
+	}
+	.ant-table-pagination{
+		margin-top:10px;
+	}
+
+}

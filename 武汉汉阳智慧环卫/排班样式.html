@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.input-style{
+			box-sizing: border-box;
+			padding: 3px 8px;
+			width: 200px;
+			height: 30px;
+			line-height: 24px;
+			vertical-align: middle;
+			display: inline-block;
+			border:none;
+			border-radius: 3px;
+			background-color: #E8F0FA;
+			box-shadow: 0 0 1px 1px #DDD;
+			margin-top: 8px;
+		}
+		.button-input{
+			width:170px;
+		}
+		.add-button{
+			width:20px;
+			height: 20px;
+			border-radius: 50%;
+			text-align:center;
+			line-height: 15px;
+			position: absolute;
+			margin-top: 15px;
+			margin-left: 5px;
+			font-size: 16px;
+			padding: 0;
+		}
+		.input-block{
+			margin-top: 10px;
+			float: left;
+			/*height: 50px;*/
+			width: 220px;
+			font-size: 12px;
+			font-family: "Microsoft YaHei";
+		}
+		.form-sec{
+			padding: 5px 10px;
+		}
+		div.form-sec:after{
+			display: block;
+			clear: both;
+			content: '';
+			height: 0;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="form-sec">
+		<div class="input-block">
+			排班对象：
+			<span class="input-style">李自成</span>
+		</div>
+		<div class="input-block">
+			排班开始时间：
+			<input type="text" name="" class="input-style">
+		</div>
+		<div class="input-block">
+			排班结束时间：
+			<input type="text" name="" class="input-style">
+		</div>
+		<div class="input-block">
+			排班计划：
+			<input type="text" name="" class="input-style">
+		</div>
+		<div class="input-block">
+			排班周期单位：
+			<select class="input-style">
+				<option>111</option>
+				<option>222</option>
+			</select>
+		</div>
+		<div class="input-block">
+			排班周期数：
+			<input type="text" name="" class="input-style">
+		</div>
+		<div class="input-block">
+			排班时段：
+			<input type="text" name="" class="input-style button-input">
+			<button class="add-button">+</button>
+		</div>
+		<div class="input-block">
+			作业类型：
+			<select class="input-style button-input">
+				<option>111</option>
+				<option>222</option>
+			</select>
+			<button class="add-button">+</button>
+		</div>
+		<div class="input-block">
+			作业区域：
+			<input type="text" name="" class="input-style button-input">
+			<button class="add-button">+</button>
+		</div>
+	</div>
+</body>
+</html>

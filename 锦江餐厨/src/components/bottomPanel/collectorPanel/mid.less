@@ -1,0 +1,22 @@
+.td_overflow{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.data_tb{
+	table-layout: fixed;
+}
+.search_bar{
+	position:absolute;
+	left:100px;
+	top:0;
+	padding: 5px;
+	& > :global(.ant-select){
+		margin-right: 5px;
+	}
+	& > :global(.ant-input-search-wrapper){
+	display: inline-block;
+	margin-left: 20px;
+	width: 220px;
+}
+}
