@@ -294,43 +294,48 @@
 	var chart1 = myEC.initCollectionStatus('status_chart_area');
 	var chart2 = myEC.initGarbageAmount('amount_chart_area');
 
-	// var data1 = {"逾期未收":90, "按时收运":600};
-	// var data2 = {x:['日产量', '预计量', '已收量'], y:[500, 450, 300]};
+	var data1 = {"逾期未收":90, "按时收运":600};
+	var data2 = {x:['日产量', '预计量', '已收量'], y:[500, 450, 300]};
 
 	// 收运状态饼图
 	chart1.showLoading();
-	$.ajax({
-		url: 'cloud/page/ljsy/taskTransKanBan/getPieChartData.jhtml',
-		type: 'get',
-		dataType: 'json',
-	})
-	.done(function(data) {
-		chart1.setOption(myEC.genOpt4CS(data));
-	})
-	.fail(function() {
-		console.log("getPieChartData error");
-	})
-	.always(function() {
-		chart1.hideLoading();
-	});
+	// $.ajax({
+	// 	url: 'cloud/page/ljsy/taskTransKanBan/getPieChartData.jhtml',
+	// 	type: 'get',
+	// 	dataType: 'json',
+	// })
+	// .done(function(data) {
+	// 	chart1.setOption(myEC.genOpt4CS(data));
+	// })
+	// .fail(function() {
+	// 	console.log("getPieChartData error");
+	// })
+	// .always(function() {
+	// 	chart1.hideLoading();
+	// });
+	chart1.setOption(myEC.genOpt4CS(data1));
+	chart1.hideLoading();
 
 
 	// 垃圾规模柱状图
 	chart2.showLoading();
-	$.ajax({
-		url: 'cloud/page/ljsy/taskTransKanBan/getWasteAmountColumnData.jhtml',
-		type: 'get',
-		dataType: 'json',
-	})
-	.done(function(data) {
-		chart2.setOption(myEC.genOpt4GA(data));
-	})
-	.fail(function() {
-		console.log("getWasteAmountColumnData error");
-	})
-	.always(function() {
-		chart2.hideLoading();
-	});
+	// $.ajax({
+	// 	url: 'cloud/page/ljsy/taskTransKanBan/getWasteAmountColumnData.jhtml',
+	// 	type: 'get',
+	// 	dataType: 'json',
+	// })
+	// .done(function(data) {
+	// 	chart2.setOption(myEC.genOpt4GA(data));
+	// })
+	// .fail(function() {
+	// 	console.log("getWasteAmountColumnData error");
+	// })
+	// .always(function() {
+	// 	chart2.hideLoading();
+	// });
+
+	chart2.setOption(myEC.genOpt4GA(data2));
+	chart2.hideLoading();
 
 
 	// 垃圾车辆运行状态 'cloud/page/ljsy/taskTransKanBan/getTaskItem.jhtml'
