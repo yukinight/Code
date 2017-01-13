@@ -215,11 +215,12 @@
 					</ul>\
 				</div>\
 				<div class="card_right_panel">\
-					<ul>\
-						<li class="crdli">里程 <span class="crdv">'+ data.transMiles.max +'/<span style="color:red;">'+ data.transMiles.current +'</span> km</span> </li>\
-						<li class="crdli">产量 <span class="crdv">'+ data.weight.max +'/<span style="color:red;">'+ data.weight.current +'</span> t</span> </li>\
-						<li class="crdli">耗时 <span class="crdv">'+ data.duration.max +'/<span style="color:red;">'+ data.duration.current +'</span> h</span> </li>\
-					</ul>\
+					<table><tbody>\
+						<tr><td>里程</td><td><span class="crdv">'+ data.transMiles.max +'/<span style="color:red;">'+ data.transMiles.current +'</span> km</span></td></tr>\
+						<tr><td>产量</td><td><span class="crdv">'+ data.weight.max +'/<span style="color:red;">'+ data.weight.current +'</span> t</span></td></tr>\
+						<tr><td>耗时</td><td><span class="crdv">'+ data.duration.max +'/<span style="color:red;">'+ data.duration.current +'</span> h</span></td></tr>\
+						<tr><td>点数</td><td><span class="crdv">'+ data.cpNum.max +'/<span style="color:red;">'+ data.cpNum.current +'</span></span></td></tr>\
+					</tbody></table>\
 				</div>\
 				<div class="card_mid_panel">\
 					<div class="card_mid_left">\
@@ -259,7 +260,8 @@
 				}
 				else
 					tl_html += '<li class="cstli cstline1">';
-				tl_html += '<div class="cstdiv '+ status_mapping[current_status.status] +'"><div class="csttime">'+ current_status.time +'</div></div></li>';
+				tl_html += '<div class="cstdiv '+ status_mapping[current_status.status] +
+				'"><div class="csttime" title="'+current_status.name+'">'+ current_status.time +'</div></div></li>';
 			}
 			for(var i=0;i<will_len;i++){
 				var current_status = time_data.will[i];
@@ -267,7 +269,8 @@
 					tl_html += '<li class="cstli">';
 				else
 					tl_html += '<li class="cstli cstline2">';
-				tl_html += '<div class="cstdiv '+ status_mapping[current_status.status] +'"><div class="csttime">'+ current_status.time +'</div></div></li>';
+				tl_html += '<div class="cstdiv '+ status_mapping[current_status.status] +
+				'"><div class="csttime" title="'+current_status.name+'">'+ current_status.time +'</div></div></li>';
 			}
 			return tl_html;
 		}

@@ -110,8 +110,7 @@
 }
 .cstdiv{
     width:50px;
-    padding-top:25px;
-    height:35px;
+    height:50px;
 }
 .cstli{
     float:left;
@@ -133,4 +132,6 @@
 }
 .csttime{
     margin-left: -6px;
+    padding-top:25px;
+    width: 36px;
 }
