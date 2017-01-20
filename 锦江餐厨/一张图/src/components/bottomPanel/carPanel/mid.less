@@ -1,0 +1,42 @@
+@import '../cssVariables';
+
+.td_overflow{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.data_tb{
+	table-layout: fixed;
+}
+.search_bar{
+	position:absolute;
+	left:100px;
+	right:10px;
+	top:0;
+	padding: 5px;
+	&>:global(.ant-select){
+		margin-right: 5px;
+	}
+	&>:global(.ant-input-preSuffix-wrapper){
+		display: inline-block;
+		float: right;
+		width: 220px;
+	}
+}
+
+.ul_style{
+	width:100%;
+	height:@contentHeight - 40;
+	overflow:auto;
+	padding-top: 3px;
+	&>:after{
+		.clear;
+	}
+
+	li:first-child{
+		border-top:solid 1px #DDD;
+	}
+}
+
+
+

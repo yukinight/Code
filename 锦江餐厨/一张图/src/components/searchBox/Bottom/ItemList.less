@@ -1,0 +1,97 @@
+@import '../searchBox.less';
+
+.listNone{
+   
+    display: none;
+}
+.list{
+    float: left;
+    // width: 260px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid @borderColor;
+    border-radius: @borderRadius;
+    box-sizing: border-box;
+    
+    //carlistItem的样式
+    .listItem{
+        width: 260px;
+        height: 25px;
+        list-style: none;
+        
+        padding: 0px 10px;
+        cursor: pointer;
+        .leftbox{
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            color: #0a9b37;
+        }
+        .state{
+            color: @textColor;
+            width: 40px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .normal{
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            color: #0a9b37;
+            font-weight: bold;
+            float: right;
+        }
+        .error{
+            width: 80px;
+            height: 25px;
+            font-weight: bold;
+            line-height: 25px;                            
+            color: #ff7143;
+            float: right;
+        }
+    }
+
+    //其他shop colllect video的样式
+    & >ul{
+        width: 260px;
+        & > li{
+            padding: 5px 0px 5px 10px;
+            // width: 260px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;//正常情况下不要
+            &:hover{
+                background-color:@hoverBgc;
+            }
+        }
+        li:last-child{
+            border: 0px;
+                
+        }
+
+       
+    }
+    .shopTitle{
+        font-size: 14px;
+        color: #77a53c;
+    }
+    .shopAddress{
+    }
+    .tel{
+        .telTitle{ 
+            float: left;   
+        }
+        .telIntro{
+            float: left; 
+        }
+    } 
+    .relatedShop{
+        ul{
+            float: left;
+            li{
+                padding: 0px;
+                float: left;
+            }
+        }
+    }
+}
