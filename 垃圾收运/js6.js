@@ -8,12 +8,12 @@
 			        trigger: 'item',
 			        formatter: "{a} <br/>{b} : {c} ({d}%)"
 			    },
+			    
 			    series : [
 			        {
 			            name: '收运状态',
 			            type: 'pie',
-			            radius : '55%',
-			            center: ['50%', '60%'],
+			            radius: ['45%', '70%'],
 			            data: [],
 			            itemStyle: {
 			                emphasis: {
@@ -32,6 +32,23 @@
 		this.genOpt4CS = function(data){
 			// data = {"逾期未收":90, "按时收运":600}
 			return {
+			    title: [{
+		            text: '21辆',
+		            x: 'center',
+		            y: 'center',
+		            textStyle: {
+		                fontWeight: 'normal',
+		                fontSize: 25
+		            }
+		        },{
+		            text: 'aaaa',
+		            x: 'bottom',
+		            y: 'center',
+		            textStyle: {
+		                fontWeight: 'normal',
+		                fontSize: 20
+		            }
+		        }],
 				series :[{
 					data:[
 		            	{
@@ -51,7 +68,7 @@
 		                	name:'按时收运',
 		                	label:{
 		                		normal:{
-		                			 formatter: '按时收运率: {d}%',
+		                			 formatter: '按时收运: {c}',
 		                			 textStyle: {
 		            				 	color: '#7A8895'
 		            				 }

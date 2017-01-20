@@ -1,5 +1,4 @@
 .top_panel{
-	margin-top:18px;
 }
 .board_title_div{
 	width:320px;
@@ -83,7 +82,7 @@
 }
 .ctdivlv2{
 	display:table-cell;
-	width:50%;
+	width:33%;
 }
 .ctdivlv3lt{
 	margin:0 auto;
@@ -97,13 +96,19 @@
 }
 .ctdivlt{
 	width:360px;
-	height:300px;
-	margin-left:40px;
+	height:280px;
+	margin:0 auto;
 }
 .ctdivrt{
 	width:260px;
 	height:300px;
-	margin-right:40px;
+	margin:0 auto;
+}
+.pielb{
+	height: 30px;
+	text-align: center;
+	margin-top: -30px;
+	font-size: 20px;
 }
 .carstatusicon{
 	margin-right: 10px;
