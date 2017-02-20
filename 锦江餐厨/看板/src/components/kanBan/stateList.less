@@ -1,0 +1,33 @@
+@import url('../../utils/configCss.less');
+
+.lidiv{
+	float: left;
+}
+.line_ok{
+	background: transparent url(@greenLine) repeat-x scroll left 12px;
+}
+.spot_div{
+	height: 50px;
+    width: 50px;
+}
+.spot_ok{
+	background: transparent url(@greenTick) no-repeat scroll left 5px;
+}
+.spot_not{
+	background: transparent url(@greyCircle) no-repeat scroll left 5px;
+}
+.time_div{
+	padding-top: 25px;
+	margin-left: -3px;
+}
+.wrapper{
+	display:table;
+	min-height: 100px;
+}
+.ctul{
+	display: table-cell;
+	vertical-align:middle;
+	&:after{
+		.clear;
+	}
+}

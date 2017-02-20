@@ -1,0 +1,82 @@
+@import url('../../utils/configCss.less');
+
+@spotTop: 25px;
+@lineTop: @spotTop + 8;
+@textOffset: 40px;
+
+.lidiv{
+	float: left;
+}
+.line_ok{
+	background: transparent url(@greenLine) repeat-x scroll left @lineTop;
+}
+.spot_div{
+	height: 90px;
+    width: 100px;
+}
+.spot_ok{
+	background: transparent url(@greenTick) no-repeat scroll left @spotTop;
+}
+.spot_not{
+	background: transparent url(@greyCircle) no-repeat scroll left @spotTop;
+}
+
+.hlct{
+	position:relative;
+}
+.wrapper{
+	height:90px;
+	overflow:hidden;
+	position: absolute;
+	left:140px;
+	right:60px;
+	top:30px;
+}
+.ctul{
+	padding: 0 @textOffset;
+	transition: margin-left 0.5s;
+	&:after{
+		.clear;
+	}
+}
+.time_div{
+	padding-top: @spotTop;
+	width:50px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.text_div{
+	margin-left: -@textOffset;
+	width:100px;
+	text-align: center;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.area_text{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.lb_div{
+	position:absolute;
+	left:20px;
+	top:30px;
+}
+.time_lb{
+	padding-top: @spotTop;
+}
+
+.left_arrow{
+	position:absolute;
+	left:80px;
+	top:35px;
+	cursor:pointer;
+}
+.right_arrow{
+	position:absolute;
+	right:0;
+	top:35px;
+	cursor:pointer;
+}
+

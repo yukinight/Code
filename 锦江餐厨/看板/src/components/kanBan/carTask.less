@@ -1,0 +1,63 @@
+@import url("../../utils/configCss.less");
+
+.wrapper{
+	width:100%;
+	box-sizing: border-box;
+	margin: 5px 0;
+    box-shadow: 0 0 1px 0;
+    padding: 10px 20px;
+    &:after{
+    	.clear;
+    }
+}
+.left_sec{
+	float: left;
+	height:100%;
+	width:200px;
+	box-sizing: border-box;
+	overflow: hidden;
+	li{
+		margin: 2px 0;
+	}
+	.carState{
+		width:50px;
+		border-radius: 12px;
+		height:24px;
+		line-height: 20px;
+		vertical-align:middle;
+		text-align: center;
+		color: #FFF;
+		padding: 2px;
+	}
+}
+.percent_sec{
+	float: left;
+	height:100%;
+	width:100px;
+	box-sizing: border-box;
+	padding: 15px 0 0 0;
+}
+
+.task_sec{
+	margin:0 120px 0 300px;
+	box-sizing: border-box;
+}
+.right_sec{
+	float: right;
+	width:120px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.carbg{
+	background: url(@car) no-repeat scroll left center;
+	padding-left: 20px;
+}
+.routebg{
+	background: url(@route) no-repeat scroll left center;
+	padding-left: 20px;
+}
+.timebg{
+	background: url(@time) no-repeat scroll left center;
+	padding-left: 20px;
+}

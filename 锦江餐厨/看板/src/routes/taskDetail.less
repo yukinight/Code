@@ -1,0 +1,102 @@
+@import url('../utils/configCss.less');
+
+.wrapper{
+	padding: 3px 10px;
+}
+.ttct{
+	box-sizing:content-box;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	padding:5px;
+}
+.title{
+	background-color:#5A9AF2;
+	border-radius:3px;
+	display: inline-block;
+	width:280px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #FFF;
+	margin-right: 20px;
+}
+
+.cp{
+	border-radius: 5px;
+	box-shadow: 0 0 1px 0;
+}
+.ptt{
+	border-bottom: 1px solid #5191E8;
+	color: #5191E8;
+	font-weight: bold;
+	font-size:14px;
+	padding: 5px 10px;
+}
+
+.mg_top{
+	margin-top: 10px;
+}
+.toppt{
+	&:after{
+		.clear;
+	}
+}
+.half_left{
+	box-sizing:border-box;
+	float:left;
+	width:49%;
+}
+.half_right{
+	box-sizing:border-box;
+	float:right;
+	width:50%;
+}
+
+.basicContent{
+	height:80px;
+	padding: 15px 6px;
+	overflow:auto;
+}
+.carContent{
+	height:80px;
+	padding: 15px 6px;
+	overflow:auto;
+}
+.historyContent{
+	height:200px;
+	padding: 5px;
+}
+.collectContent{
+	height:220px;
+}
+.collectBar{
+	border-bottom: 1px solid #F9F9F9;
+	min-height:40px;
+	padding: 0 15px;
+	overflow:hidden;
+}
+.inlb{
+	padding:3px;
+	margin-right:50px;
+	display:inline-block;
+}
+.barlb{
+	margin-right:50px;
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+}
+.routeBg{
+	background: url(@route) scroll no-repeat left center;
+	padding-left: 18px;
+}
+.timeBg{
+	background: url(@time) scroll no-repeat left center;
+	padding-left: 18px;
+}
+.abnmlk{
+	color: red;
+	text-decoration: underline;
+}
