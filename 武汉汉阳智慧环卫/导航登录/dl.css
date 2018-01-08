@@ -70,7 +70,7 @@ div.foot-panel span{
 .login-label{
 	height: 30px;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 	line-height: 30px;
 	color: #2A87F0;
 	font-size: 16px;
@@ -115,11 +115,12 @@ div.foot-panel span{
 
 .verification-code{
 	display: inline-block;
-	width:80px;
-	height:100%;
+	width:85px;
+	height:30px;
 	line-height: 100%;
 	vertical-align: bottom;
 	margin-left: 10px;
+	font-size: 12px;
 }
 .verification-code > img{
 	width: 100%;
@@ -133,7 +134,9 @@ div.foot-panel span{
 	font-size: 12px;
 	font-weight: bold;
 }
-
+.login-checkbox label{
+	cursor: pointer;
+}
 div.checkbox-sec:after{
 	clear: both;
 	content: '';
@@ -151,4 +154,15 @@ div.checkbox-sec:after{
 	color: #FFF;
 	font-size: 18px;
 	border-radius: 5px;
+	cursor: pointer;
+}
+.login-btn:active{
+	background-color: #108ee9;
+	box-shadow: 0 0 5px 1px #108ee9;
+}
+
+.error_msg{
+	color: red;
+	margin-top: 20px;
+	font-size: 12px;
 }

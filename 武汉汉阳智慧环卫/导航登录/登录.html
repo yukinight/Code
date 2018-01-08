@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<title>汉阳智慧环卫管理系统</title>
 	<link rel="stylesheet" type="text/css" href="dl.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/md5.js"></script>
+	<script src= "./js/token.js"></script>
+	<script src= "./js/gVerify.js"></script>
+	<script src= "./js/login.config.js"></script>
+	<script src= "./js/login.js"></script>
 </head>
 <body>
 	<div class="main-panel">
@@ -16,38 +22,38 @@
 					环卫系统用户管理中心
 				</div>
 				<div class="login-panel-input">
-					<input name="" placeholder="用户名" type="text" class="n-input">
+					<input placeholder="用户名" type="text" class="n-input" id="name">
 					<img class="login-img" src="./img/user.png">
 				</div>
 				<div class="login-panel-input">
-					<input placeholder="密 码" type="password" class="n-input">
+					<input placeholder="密 码" type="password" class="n-input" id="pwd">
 					<img class="login-img" src="./img/pwd.png">
 				</div>
 				<div class="login-panel-input">
-					<input class="verification-code-input" type="text" placeholder="验证码">
-					<div class="verification-code">
-						<img  src="./img/verification-code.png">
+					<input class="verification-code-input" type="text" placeholder="验证码" id="vcode">
+					<div class="verification-code" id="vc_container">
+						
 					</div>
 					
 				</div>
 				<div class="checkbox-sec">
 					<div class="login-checkbox">
 						<label>
-							<input type="checkbox">
+							<input type="checkbox" id="auto_login">
 							<span>自动登录</span>
 						</label> 
 					</div>
 					<div class="login-checkbox">
 						<label>
-							<input type="checkbox">
+							<input type="checkbox" id="remember_user">
 							<span>记住用户名</span> 
 						</label> 
 					</div>
 				</div>
 
-				<button class="login-btn" type="button">登录</button>
+				<button class="login-btn" type="button" id="loginButton">登录</button>
 
-				<div></div>
+				<div class="error_msg" id="errorMsg"></div>
 			</div>
 
 		</div>
